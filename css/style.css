@@ -61,29 +61,45 @@ table {
 @font-face {
     font-family: "HandelGoth";
     src:         url("fonts/HandelGothic.eot");
-    src:         url('fonts/HandelGothic.eot?#iefix') format('embedded-opentype'), url('fonts/HandelGothic.woff') format('woff'), url('fonts/HandelGothic.ttf') format('truetype'), url('fonts/HandelGothic.svg#HandelGothic') format('svg');
+    src:         url("fonts/HandelGothic.eot?#iefix") format("embedded-opentype"), url("fonts/HandelGothic.woff") format("woff"), url("fonts/HandelGothic.ttf") format("truetype"), url("fonts/HandelGothic.svg#HandelGothic") format("svg");
     font-weight: normal;
     font-style:  normal;
 }
 
 @font-face {
     font-family: "Atari Classic Chunky";
-    src:         url('fonts/Atari8Bit.eot');
-    src:         url('fonts/Atari8Bit.eot?#iefix') format('embedded-opentype'), url('fonts/Atari8Bit.woff') format('woff'), url('fonts/Atari8Bit.ttf') format('truetype'), url('fonts/Atari8Bit.svg#Atari8Bit') format('svg');
+    src:         url("fonts/Atari8Bit.eot");
+    src:         url("fonts/Atari8Bit.eot?#iefix") format("embedded-opentype"), url("fonts/Atari8Bit.woff") format("woff"), url("fonts/Atari8Bit.ttf") format("truetype"), url("fonts/Atari8Bit.svg#Atari8Bit") format("svg");
     font-weight: normal;
     font-style:  normal;
 }
 
+/* FIXME */
+@font-face {
+    font-family: "Roboto Bold";
+    src:         url("fonts/Atari8Bit.eot");
+    src:         url("fonts/Atari8Bit.eot?#iefix") format("embedded-opentype"), url("fonts/Atari8Bit.woff") format("woff"), url("fonts/Atari8Bit.ttf") format("truetype"), url("fonts/Atari8Bit.svg#Atari8Bit") format("svg");
+    font-weight: normal;
+    font-style:  normal;
+}
+
+/*****************************************/
+/*****************************************/
+
+/*
+    BT RED - #b20000
+*/
+
 body {
     font-family: sans-serif;
-    font-size:   62.5%;
+    font-size:   1em;
     padding:     1em;
 }
 
-#Content {
+#OuterContent {
     margin-left:  auto;
     margin-right: auto;
-    width:        75%;
+    width:        1024px;
 }
 
 #Description {
@@ -97,6 +113,7 @@ body {
 #Menu {
     font-family: "HandelGoth", sans-serif;
     color:       #b20000;
+    font-size:   0.64em;
 }
 
 #Menu ul {
@@ -108,8 +125,34 @@ body {
     line-height: 1.0;
 }
 
-#InnerContent {
-    background: black;
-    width:      100%;
-    padding:    1em;
+#PageContent {
+    clear:       both;
+    padding-top: 1em;
+    font-family: "Roboto Bold", sans-serif;
+}
+
+#PageContent p {
+    padding-top: 1em;
+}
+
+.content-block .header {
+    font-family:    "HandelGoth", sans-serif;
+    padding:        0.5em;
+    text-shadow:    2px 2px 4px black;
+    background:     #b20000;
+    color:          white;
+    font-size:      1.2em;
+    border-top:     4px solid black;
+    text-align:     center;
+    text-transform: uppercase;
+}
+
+.block-blog {
+    width: 680px;
+    float: left;
+}
+
+.block-twitter {
+    width: 300px;
+    float: right;
 }
