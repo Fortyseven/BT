@@ -60,99 +60,171 @@ table {
 
 @font-face {
     font-family: "HandelGoth";
-    src:         url("fonts/HandelGothic.eot");
-    src:         url("fonts/HandelGothic.eot?#iefix") format("embedded-opentype"), url("fonts/HandelGothic.woff") format("woff"), url("fonts/HandelGothic.ttf") format("truetype"), url("fonts/HandelGothic.svg#HandelGothic") format("svg");
+    src:         url("../fonts/HandelGothic.eot");
+    src:         url("../fonts/HandelGothic.eot?#iefix") format("embedded-opentype"), url("../fonts/HandelGothic.woff") format("woff"), url("../fonts/HandelGothic.ttf") format("truetype"), url("../fonts/HandelGothic.svg#HandelGothic") format("svg");
     font-weight: normal;
     font-style:  normal;
 }
 
 @font-face {
-    font-family: "Atari Classic Chunky";
-    src:         url("fonts/Atari8Bit.eot");
-    src:         url("fonts/Atari8Bit.eot?#iefix") format("embedded-opentype"), url("fonts/Atari8Bit.woff") format("woff"), url("fonts/Atari8Bit.ttf") format("truetype"), url("fonts/Atari8Bit.svg#Atari8Bit") format("svg");
+    font-family: "Atari";
+    src:         url("../fonts/Atari8Bit.eot");
+    src:         url("../fonts/Atari8Bit.eot?#iefix") format("embedded-opentype"), url("../fonts/Atari8Bit.woff") format("woff"), url("../fonts/Atari8Bit.ttf") format("truetype"), url("../fonts/Atari8Bit.svg#Atari8Bit") format("svg");
     font-weight: normal;
     font-style:  normal;
 }
 
-/* FIXME */
-@font-face {
-    font-family: "Roboto Bold";
-    src:         url("fonts/Atari8Bit.eot");
-    src:         url("fonts/Atari8Bit.eot?#iefix") format("embedded-opentype"), url("fonts/Atari8Bit.woff") format("woff"), url("fonts/Atari8Bit.ttf") format("truetype"), url("fonts/Atari8Bit.svg#Atari8Bit") format("svg");
-    font-weight: normal;
-    font-style:  normal;
-}
-
-/*****************************************/
-/*****************************************/
-
-/*
-    BT RED - #b20000
-*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 
 body {
-    font-family: sans-serif;
-    font-size:   1em;
-    padding:     1em;
+    background:      url("../images/bg2.png") no-repeat bottom center fixed;
+    background-size: contain;
+    padding:         0;
+    margin:          0;
 }
 
-#OuterContent {
+#Scanlines {
+    background: url("../images/scanlines.png");
+    min-width:  100%;
+    min-height: 100%;
+    position:   fixed;
+    top:        0;
+    left:       0;
+    z-index:    -10;
+    opacity:    0.8;
+}
+
+#Content, #Header {
+    font-family:  HandelGoth;
+    width:        50em;
+    color:        darkred;
     margin-left:  auto;
     margin-right: auto;
-    width:        1024px;
+    background:   white;
+    padding:      1em;
+    border:       3px solid black;
+    margin-top:   1em;
+    opacity:      0.8;
+    box-shadow:   0px 0px 18px black;
 }
 
-#Description {
-    font-family: "HandelGoth", sans-serif;
-    width:       240px;
-    float:       left;
-    text-align:  center;
-    color:       #b20000;
+#Content {
+    background:     darkred;
+    opacity:        0.9;
+    overflow:       auto;
+    display:        flex;
+    align-content:  stretch;
+    flex-direction: column;
+    flex-flow:      wrap;
+    margin-bottom:  1em;
 }
 
-#Menu {
-    font-family: "HandelGoth", sans-serif;
-    color:       #b20000;
-    font-size:   0.64em;
+#Logo {
+    width:   240px;
+    opacity: 1;
 }
 
-#Menu ul {
-    padding:     0;
-    margin:      0;
-    list-style:  none;
-    text-align:  right;
-    font-size:   3em;
-    line-height: 1.0;
+#Byline {
+    font-size: 2em;
 }
 
-#PageContent {
-    clear:       both;
-    padding-top: 1em;
-    font-family: "Roboto Bold", sans-serif;
+#Footer {
+    font-size:     small;
+    color:         white;
+    text-align:    center;
+    font-style:    italic;
+    margin-bottom: 1em;
+    margin-left:   auto;
+    margin-right:  auto;
+    width:         50em;
 }
 
-#PageContent p {
-    padding-top: 1em;
+.section {
+    width:      46%;
+    background: white;
+    border:     4px solid black;
+    padding:    0.4em;
+    text-align: left;
+    margin:     0.3em;
+    box-shadow: 4px 4px 0px #400;
 }
 
-.content-block .header {
-    font-family:    "HandelGoth", sans-serif;
-    padding:        0.5em;
-    text-shadow:    2px 2px 4px black;
-    background:     #b20000;
-    color:          white;
-    font-size:      1.2em;
-    border-top:     4px solid black;
-    text-align:     center;
+.section .title {
+    color:          black;
+    font-size:      1.5em;
+    padding-bottom: 0.5em;
+    font-weight:    bold;
+    float:          left;
+}
+
+.section .type {
+    width:    30px;
+    height:   36px;
+    float:    right;
+    position: relative;
+
+}
+
+.section ul {
+    clear: both;
+}
+
+.section li {
+    padding-bottom: 0.5em;
+}
+
+.section li a {
+    color:           darkred;
+    text-decoration: underline;
+}
+
+.section li a:hover {
+    color: red;
+}
+
+.section li span {
+    font-family:  "Roboto", sans-serif;
+    color:        black;
+    padding-left: 0.5em;
+    font-size:    0.9em;
+    font-weight:  bold;
+}
+
+.section .html5 {
+    background-image: url("../images/type_html5.png");
+}
+
+.section .android {
+    background-image: url("../images/type_android.png");
+}
+
+.section .unity {
+    background-image: url("../images/type_unity.png");
+}
+
+.section .php5 {
+    background-image: url("../images/type_php.png");
+}
+
+#Contact {
+    font-family:    "Roboto";
+    font-weight:    bold;
+    padding-top:    0.5em;
+    font-size:      1.1em;
     text-transform: uppercase;
 }
 
-.block-blog {
-    width: 680px;
-    float: left;
+#Contact li {
+    display: inline;
 }
 
-.block-twitter {
-    width: 300px;
-    float: right;
+#Contact a {
+    color:         black;
+    padding-left:  0.25em;
+    padding-right: 0.25em;
+    font-weight:   bold;
+}
+
+#Contact a:hover {
+    color: red;
 }
