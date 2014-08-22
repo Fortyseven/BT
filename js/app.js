@@ -22,7 +22,7 @@ function changeTo( hash )
             cur_section = section;
             el.click();
 
-            $( ".section." + cur_section + " .item_buttons button" ).each( function ( n, el )
+            $( ".section." + cur_section + " .item_buttons .button" ).each( function ( n, el )
             {
                 var el = $( el );
                 if ( el.data( 'item-id' ) == item ) {
@@ -38,8 +38,6 @@ function main()
     $( ".section" ).hide();
     $( ".item_content .contents" ).hide();
     $( ".item_content" ).hide();
-
-    //TODO: ADD CLICK-TO FUNCTION TO ALLOW HARD LINKING TO PAGES
 
     /********************/
     $( "#SectionButtons .button" ).click( function ()
@@ -65,25 +63,25 @@ function main()
             {
                 old_section.hide();
                 $( ".section." + section_id ).slideDown( 100 );
-                $( ".section." + section_id + " .item_buttons button" ).first().click();
+                $( ".section." + section_id + " .item_buttons .button" ).first().click();
             } );
         }
         else {
             $( ".section." + section_id ).slideDown( 100 );
-            $( ".section." + section_id + " .item_buttons button" ).first().click();
+            $( ".section." + section_id + " .item_buttons .button" ).first().click();
         }
         updateLocation();
     } );
 
     /********************/
-    $( ".item_buttons button" ).click( function ()
+    $( ".item_buttons .button" ).click( function ()
     {
         var this_button = $( this );
         var widget_id = this_button.data( 'item-id' );
         var this_item_content = $( this_button.parents()[1] ).find( ".item_content" );
 
         $( ".item_content" ).hide();
-        $( ".item_buttons button" ).removeClass( 'button_selected' );
+        $( ".item_buttons .button" ).removeClass( 'button_selected' );
 
         this_button.addClass( "button_selected" );
 
