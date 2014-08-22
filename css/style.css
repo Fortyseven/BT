@@ -35,7 +35,7 @@ body {
 /*}*/
 
 body {
-    font-family:         HandelGoth, sans-serif;
+    font-family:         "HandelGoth", sans-serif;
     font-size:           12pt;
     -webkit-text-stroke: 0.25px;
 }
@@ -45,28 +45,18 @@ body {
 }
 
 #Content {
-    font-family: HandelGoth;
-    background:  darkred;
-    color:       black;
-    padding:     1em;
+    font-family:   "HandelGoth", sans-serif;
+    background:    darkred;
+    color:         black;
+    padding:       1em;
     /*opacity:     0.8;*/
-    box-shadow:  0px 0px 18px black;
-    width:       100%;
-    clear:       both;
+    box-shadow:    0px 0px 18px black;
+    width:         100%;
+    clear:         both;
+    border-radius: 8px;
 }
 
-/*#Content {*/
-/*opacity:       0.9;*/
-/*overflow:      auto;*/
-/*display:        flex;*/
-/*align-content: stretch;*/
-/*flex-direction: column;*/
-/*flex-flow:      wrap;*/
-/*margin-bottom: 1em;*/
-/*}*/
-
 #Logo {
-    /*width:   240px;*/
     opacity:      1;
     float:        left;
     padding-left: 1em;
@@ -92,13 +82,14 @@ body {
 }
 
 #Contact {
-    float:          right;
     font-family:    "Roboto", sans-serif;
+    float:          right;
     font-weight:    bold;
-    font-size:      1.0em;
+    font-size:      1.1em;
     text-transform: uppercase;
     padding-top:    1em;
     padding-right:  1em;
+    line-height:    1.8em;
 }
 
 #Contact h2, #Contact ul {
@@ -107,10 +98,15 @@ body {
 }
 
 #Contact h2 {
-    font-size:      1.5em;
-    padding-top:    0.25em;
-    padding-bottom: 0.25em;
-    color:          #AAA;
+    font-size:           1.7em;
+    font-weight:         normal;
+    padding-top:         1em;
+    padding-bottom:      0.25em;
+    color:               #DDD;
+    font-family:         "Atari";
+    letter-spacing:      -0.05em;
+    line-height:         0;
+    -webkit-text-stroke: 0;
 }
 
 #Contact li {
@@ -136,60 +132,50 @@ body {
 /* =================================== SECTIONS */
 
 .section {
-    background: #FFF;
-    width:      100%;
-    clear:      both;
-    border:     4px solid black;
-    padding:    0.4em;
-    text-align: left;
-    margin:     0.3em;
-    box-shadow: 0px 0px 18px #000;
+    background:    #FFF;
+    width:         100%;
+    clear:         both;
+    border:        4px solid black;
+    padding:       0.4em;
+    text-align:    left;
+    margin:        0.3em;
+    box-shadow:    0px 0px 18px #000;
+    border-radius: 8px;
 }
-
-/*.section .head {*/
-    /*height: 48px;*/
-/*}*/
-
-
-/*.section .title {*/
-    /*color:          darkred;*/
-    /*font-size:      1.5em;*/
-    /*padding-bottom: 0.5em;*/
-    /*float:          left;*/
-
-/*}*/
 
 #SectionButtons {
     height:        48px;
     margin-bottom: 1em;
-    text-align: center;
+    text-align:    center;
 }
 
 #SectionButtons .button {
     display:             inline-block;
-    padding:             6px 12px;
+    padding:             6px 22px;
     margin-bottom:       0;
-    font-size:           14px;
     white-space:         nowrap;
     vertical-align:      middle;
     cursor:              pointer;
     -webkit-user-select: none;
-    border-radius:       4px;
+    border-radius:       8px;
     background:          white;
     font-size:           1.5em;
     box-shadow:          0px 0px 18px #000;
     color:               black;
-
+    -webkit-text-stroke: 0;
 }
 
 #SectionButtons .button:hover {
     box-shadow: none;
+    position:   relative;
+    top:        2px;
 }
 
 #SectionButtons .selected {
-    background: black;
-    color:      white;
-    box-shadow: none;
+    background:  black;
+    color:       white;
+    box-shadow:  none;
+    text-shadow: 0 0 8px red;
 }
 
 #SectionButtons label {
@@ -251,11 +237,11 @@ body {
     background-image: url("../images/type_php.png");
 }
 
-/* =================================== SECTION MENU */
-
 .btn {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-family:   'Roboto', sans-serif;
+    font-weight:   bold;
+    text-overflow: ellipsis;
+
 }
 
 button {
@@ -270,56 +256,64 @@ button img {
 }
 
 .btn:hover, .button_selected, .btn:focus {
-    background-color: darkred;
+    background-color: black;
     color:            white;
-    border:           none;
+    text-shadow:      0 0 8px red;
+    border:           none !important;
+    box-shadow:       none !important;
 }
 
-.menu_buttons {
+/* =================================== SECTION ITEM */
+.item_buttons {
     padding-bottom: 1em;
 }
 
-.menu_content {
+.item_buttons button {
+    box-shadow: 0px 0px 9px #000;
+}
+
+.item_content {
     padding:    1em;
     /*box-shadow: 0px 0px 18px black;*/
     border-top: 1px solid black;
     margin:     1em;
 }
 
-.menu_content .title {
-    float: none;
-    color: darkred;
+.item_content .title {
+    float:     none;
+    color:     darkred;
+    font-size: 2em;
 }
 
-.menu_content .screencaps {
+.item_content .screencaps {
     float:        right;
     padding-left: 1em;
 }
 
-.menu_content .description {
+.item_content .description {
     text-align:  justify;
     line-height: 1.1em;
     margin-left: 2em;
 }
 
-.menu_content .description, .menu_content .links {
+.item_content .description, .item_content .links {
     font-family: 'Roboto', sans-serif;
 }
 
-.menu_content .section_name {
+.item_content .section_name {
     font-weight: bold;
     padding-top: 1em;
 }
 
-.menu_content .links {
+.item_content .links {
     /*clear: both;*/
 }
 
-.menu_content .links a {
+.item_content .links a {
     font-weight: bold;
 }
 
-.menu_content ul {
+.item_content ul {
     clear: none;
     /*list-style: square;*/
 }
