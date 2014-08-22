@@ -2,72 +2,330 @@
 <html>
 <head>
     <title>Bytes Templar - Web, Gaming, and Mobile Software Development</title>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
     <link rel="icon" href="images/favicon.png" sizes="32x32"/>
     <link rel="icon" href="images/favicon.png" sizes="48x48"/>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<div id="Scanlines"></div>
-<div id="Header" align="center">
-    <div id="Logo"><img src="images/header_logo.png"></div>
-    <div id="Byline">Web, Mobile, and Game Development</div>
-    <div id="Contact">
-        <ul>
-            <!--<li><a href="#" target="_blank">About</a></li>-->
-            <li><a href="https://github.com/Fortyseven/" target="_blank">GitHub</a></li>
-            <li><a href="https://www.youtube.com/user/BytesTemplarInc">YouTube</a></li>
-            <li><a href="https://twitter.com/BytesTemplar" target="_blank">Twitter</a></li>
-            <li><a href="https://www.facebook.com/BytesTemplar" target="_blank">Facebook</a></li>
-            <li><a href="https://www.linkedin.com/in/fortyseven/" target="_blank">LinkedIn</a></li>
-            <li><a href="http://voicebunny.com/actors/toby-deshane-Q9QCBK" target="_blank">Voice Bunny</a></li>
-            <li><a href="https://soundcloud.com/fortyseven" target="_blank">SoundCloud</a></li>
-            <!--<li><b><a href="http://bytestemplar.blogspot.com/">Blog</a></b></li>-->
-        </ul>
-        <br/>
-        <a style="font-size:1.5em; color: darkred; font-weight:bolder" href="http://bytestemplar.blogspot.com/">Blog</a>
+<div class="container">
+    <!--<div id="Scanlines"></div>-->
+    <div id="Header">
+        <div id="Logo">
+            <img src="images/header_logo.png">
+            <div id="Byline">Web, Mobile, and<br/>Game Development</div>
+        </div>
+        <div id="Contact">
+            <h2>Social</h2>
+            <ul>
+                <!--<li><a href="#" target="_blank">About</a></li>-->
+                <li><a href="https://www.linkedin.com/in/fortyseven/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.facebook.com/BytesTemplar" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/BytesTemplar" target="_blank">Twitter</a></li>
+                <li><b><a href="http://bytestemplar.blogspot.com/">Blog</a></b></li>
+            </ul>
+            <h2>Voice Work</h2>
+            <ul>
+                <li><a href="https://soundcloud.com/fortyseven" target="_blank">SoundCloud</a></li>
+                <li><a href="http://voicebunny.com/actors/toby-deshane-Q9QCBK" target="_blank">Voice Bunny</a></li>
+            </ul>
+            <h2>Code</h2>
+            <ul>
+                <li><a href="https://github.com/Fortyseven">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
     </div>
-</div>
-<div id="Content" align="center">
-    <div class="section">
-        <div class="title">Android</div>
-        <div class="type android"></div>
-        <ul>
-            <li><a href="https://play.google.com/store/apps/details?id=com.bytestemplar.tonedef" target="_blank">ToneDef</a><span>Lightweight, free tone dialer featuring full DTMF, Bluebox, Redbox, and other phreaky business.</span></li>
-            <li><a href="https://github.com/Fortyseven/SpareDeck" target="_blank">Spare Deck</a><span>Portable copies of the augmented reality cards for the Nintendo 3DS and Playstation Vita.</span>
-            <li><a href="https://play.google.com/store/apps/details?id=com.hacsoft.vk" target="_blank">VK Launcher</a><span>Launch applications through user-definable keywords.</span>
-            </li>
-        </ul>
+    <!-- --------------------------- -->
+    <div id="Content">
+        <div id="SectionButtons">
+            <div class="button" data-section-id="unity"><label>Unity</label><div class="type unity"></div></div>
+            <div class="button" data-section-id="android"><label>Android</label><div class="type android"></div></div>
+            <div class="button" data-section-id="html5"><label>HTML5</label><div class="type html5"></div></div>
+        </div>
+    <!-- --------------------------- -->
+    <div class="section unity">
+        <div class="content">
+            <div class="menu_buttons" align="center">
+                <button class="btn" data-widget-id="wab">Whack-A-Burster<img src="images/projects/wab-1.jpg"/></button>
+                <button class="btn" data-widget-id="vsb">Virtual Stuck-Behind-A-Bus<img src="images/projects/vsb-1.jpg"/></button>
+                <button class="btn" data-widget-id="bms">Brownian Motion Simulator<img src="images/projects/bms-1.png"/></button>
+                <button class="btn" data-widget-id="flp">Flapjack<img src="images/projects/flp-1.png"/></button>
+                <button class="btn" data-widget-id="esc">Ch1p5 Escape<img src="images/projects/esc-1.png"/></button>
+            </div>
+            <div class="menu_content">
+                <!--------------->
+                <div class="contents wab">
+                    <div class="title">Whack-A-Burster</div>
+                    <div class="screencaps">
+                        <img src="http://i.gjcdn.net/imgserver/screenshot-thumbnail/320x240/58867.jpg" class="thumbnail">
+                    </div>
+                    <div class="description">
+                        <p><a href="http://www.ludumdare.com/compo/ludum-dare-29/?action=preview&uid=2847">Ludum Dare 29 jam entry!</a></p>
+                        <br/>
+                        <p>The Space Marines were pretty clever. With their advanced science, they simply beamed their dead off the battlefield
+                            to be recycled into another wave of soldiers. A gruesome and morally questionable mechanism of war, but one that led
+                            them to unstoppable success against any threat.</p>
+                        <p>The enemy Xenomorphs would prove to be quite a different story. Wild, violent, but spectacularly intelligent, the
+                            alien creatures found they could simply nest inside their attacker's chests. This allowed them to follow the dead
+                            soldier as they're recycled into new, fresh men... behind enemy lines! Luckily, this cunning tactic was discovered
+                            early on.</p>
+                        <p>That's where <b>you</b> come in...</p>
+                    </div>
+                    <div class="links">
+                        <div class="section_name">Links</div>
+                        <ul>
+                            <li><a href="http://gamejolt.com/games/arcade/whack-a-burster/30298/">Play it on GameJolt</a></li>
+                            <li><a href="misc/ld48/29/">Original LD48 Version</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- ---------- -->
+                <div class="contents bms">
+                    <div class="title">Brownian Motion Simulator</div>
+                    <div class="screencaps">
+                        <img src="images/projects/bms-1.png" class="thumbnail">
+                    </div>
+                    <div class="description">
+                        <p>Just a fun experiment attempting to simulate <a href="http://en.wikipedia.org/wiki/Brownian_motion">Brownian Motion</a> in Unity.</p>
+
+                        <p>Scientific accuracy not guaranteed.</p>
+                    </div>
+                    <div class="links">
+                        <div class="section_name">Links</div>
+                        <ul>
+                            <li><a href="misc/unity/brownian/">Web Version</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- ---------- -->
+                <div class="contents vsb">
+                    <div class="title">Virtual Stuck-Behind-A-Bus</div>
+                    <div class="screencaps">
+                        <img src="images/projects/vsb-1.jpg" class="thumbnail">
+                    </div>
+                    <div class="description">
+                        <p>This stupid little thing was created as both a bit of a joke, and served as my first real introduction to Unity. It is not an actual "game".</p>
+
+                        <p><i>Virtual Stuck Behind A Bus</i> was a video game played by Peter Griffin during an episode of 'Family Guy'. It a hilarious scene, and I realized it would be quite easy to mock up.</p>
+
+                        <p>This version of the game represents the joke as presented in the episode, <a href="https://www.youtube.com/watch?v=fuQ_1Z85VY8">seen here</a>.</p>
+                        <br/>
+
+                        <p>(I have more current build where I attempted to take the idea and expand it out, turning it into an actual game! I doubt I will return to that, however.)</p>
+                    </div>
+                    <div class="links">
+                        <div class="section_name">Links</div>
+                        <ul>
+                            <li><a href="http://gamejolt.com/games/other/virtual-stuck-behind-a-bus/30775/">Play it on GameJolt!</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- ---------- -->
+                <div class="contents flp">
+                    <div class="title">Flapjack</div>
+                    <div class="screencaps">
+                        <img src="images/projects/flp-1.png" class="thumbnail">
+                    </div>
+                    <div class="description">
+                        <p>A skeleton version of Flappy Bird made on my lunch break. Note, this was made before it was considered shameful to do so.</p>
+                        <br/>
+                        <p>
+                            <small>This was expanded into a more complete game, with custom graphics and everything... but it was purposely destroyed. Don't ask.</small>
+                        </p>
+                    </div>
+                    <div class="links">
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="misc/unity/flapjack/">Web version</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- ---------- -->
+                <div class="contents esc">
+                    <div class="title">Ch1p5 Escape</div>
+                    <div class="screencaps">
+                        <img src="images/projects/esc-1.png" class="thumbnail">
+                    </div>
+                    <div class="description">
+                        <p>Unfinished one-level remake of the classic <i><a href="http://en.wikipedia.org/wiki/Chip's_Challenge">Chip's Challenge</a></i> in 3D.</p>
+
+                        <p>This was made in my early Unity days. Note the 'Unreal' levels of colored lighting, and ripped off Minecraft textures. Complete abuse. Barely any skill with Blender here.</p>
+                    </div>
+                    <div class="links">
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="misc/unity/chips/">Web version</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="section">
-        <div class="title">HTML5</div>
-        <div class="type html5"></div>
-        <ul>
-            <li><a href="/apps/tonedef/">ToneDef Web Edition</a><span>Port of ToneDef to HTML5 using AngularJS and the latest Web Audio API technology.</span></li>
-            <li><a href="/misc/reddmo/">Reddmo</a><span>A fun toy to generate random magazine covers from Reddit headlines.</span></li>
-        </ul>
+    <!-- --------------------------- -->
+    <div class="section android">
+        <div class="content">
+            <div class="menu_buttons" align="center">
+                <button class="btn" data-widget-id="ton">ToneDef<img src="images/projects/ton-1-sm.png"/></button>
+                <button class="btn" data-widget-id="sdk">Spare Deck<img src="images/projects/sdk-1.jpg"/></button>
+                <button class="btn" data-widget-id="vkl">VK Launcher<img src="images/projects/vkl-1.png"/></button>
+            </div>
+            <div class="menu_content">
+                <!--------------->
+                <div class="contents ton">
+                    <div class="title">ToneDef Tone Dialer</div>
+                    <div class="screencaps">
+                        <img src="images/projects/ton-1-lg.jpg" class="thumbnail"/>
+                    </div>
+                    <div class="description">
+                        <p>ToneDef is a small, powerful open-source tone dialer featuring full DTMF, blue box, and red box modes. Dial using the keypad buttons, enter a predefined sequence for automatic playback, or select an entry from your contact list. A small slice of phreaking history! ;)</p>
+
+                        <p>License: GPL V2</p>
+                    </div>
+                    <div class="links">
+                        <div class="section_name">Links</div>
+                        <ul>
+                            <li><a href="https://play.google.com/store/apps/details?id=com.bytestemplar.tonedef"><img title="Google Play Store" src="images/google-play.png"/></a></li>
+                            <li><a href="https://github.com/Fortyseven/ToneDef">Fork it on GitHub</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <!--------------->
+                <div class="contents sdk">
+                    <div class="title">Spare Deck</div>
+                    <div class="screencaps">
+                        <img src="images/projects/sdk-1.jpg" class="thumbnail">
+                    </div>
+                    <div class="description">
+                        <p><i>"Lose the deck of AR cards for your favorite video game console? This free Android app might be able to help..."</i></p>
+                        <br/>
+
+                        <p>This is an Android app I actually had taken down by Nintendo off of the Google Play Store. "Spare Deck" is essentially a high res gallery of the AR cards that come packed with the Nintendo 3DS. It was expanded to include the ones packed with Kid Icarus, and also the Playstation Vita.</p>
+
+                        <p>The app is no longer supported, but the source code is free for whoever might be interested.</p>
+                        <hr/>
+                        <p><small>Spare Deck was written early in the process of learning Android, so there's probably bugs and bad decisions everywhere.</small></p>
+
+                        <p>License: MIT</p>
+                    </div>
+                    <div class="links">
+                        <div class="section_name">Links</div>
+                        <ul>
+                            <li><a href="https://github.com/Fortyseven/SpareDeck">Fork it on GitHub</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <!--------------->
+                <div class="contents vkl">
+                    <div class="title">VK Launcher</div>
+                    <div class="screencaps">
+                        <img src="images/projects/vkl-2.png" class="thumbnail">
+                    </div>
+                    <div class="description">
+                        <p><b>Launch apps by saying your favorite phrase or word!</b></p>
+
+                        <p>VK Launcher lets you harness the power of Google Voice Search to start any application on your Android device by saying a keyword that you define. An unlimited amount of keywords can be created and backed up to external storage.</p>
+                        <hr/>
+                        <p><small>Admittedly, this app has been deprecated a bit thanks to Google Now, but at the time there wasn't anything like it in the store.  Still, maybe it has some utility for certain individuals.</small></p>
+                    </div>
+                    <div class="links">
+                        <div class="section_name">Links</div>
+                        <ul>
+                            <li><a href="https://play.google.com/store/apps/details?id=com.hacsoft.vk"><img title="Google Play Store" src="images/google-play.png"/></a></li>
+                            <li><a href="https://play.google.com/store/apps/details?id=com.hacsoft.vk.trial">Free Trial Version</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="section">
-        <div class="title">Unity</div>
-        <div class="type unity"></div>
-        <ul>
-            <li><a href="/misc/ld48/29/">Whack A Burster</a><span>Ludum Dare 28 Jam entry. Smash the chestbursters with your Medical Hammer&trade;. It's an Alien-themed whack-a-mole game. Don't think too hard about it. (Improved, bug-fixed version coming soon!)</span></li>
-            <li><a href="/misc/unity/brownian/">Brownian Motion Simulator</a><span>Smaller water molecules bouncing into larger molecules. What fun!</span></li>
-            <li><a href="/misc/unity/VirtStuckBehindBus/">Virtual Stuck Behind A Bus</a><span>Quick mockup of a game seen on Family Guy. You're stuck behind a bus. Isn't that fun?</span></li>
-            <li><a href="/misc/unity/flapjack/">Flapjack</a><span>A version of Flappy Bird made on my lunch break. This was made before it was considered shameful to do so.</span></li>
-            <li><a href="misc/unity/chips/">Ch1p5 Escape</a><span>Unfinished one-level remake of the classic "Chip's Challenge" in 3D.</span></li>
-        </ul>
+
+    <!-- --------------------------- -->
+    <div class="section html5">
+        <div class="content">
+            <div class="menu_buttons" align="center">
+                <button class="btn" data-widget-id="tdw">ToneDef Web<img src="images/projects/ton-1-sm.png"/></button>
+                <button class="btn" data-widget-id="red">Reddmo<img src="images/projects/red-1.png"/></button>
+            </div>
+            <div class="menu_content">
+                <!--------------->
+                <div class="contents tdw">
+                    <div class="title">ToneDef Web Edition</div>
+                    <div class="screencaps">
+                        <img src="images/projects/ton-1-lg.jpg" class="thumbnail">
+                    </div>
+                    <div class="description">
+                        <p>This is a port of the Android ToneDef tone dialer to HTML5 using the Web Audio API and AngularJS. Tested with the latest Chrome (desktop and mobile), and Firefox.</p>
+                    </div>
+                    <div class="links">
+                        <div class="section_name">Links</div>
+                        <ul>
+                            <li><a href="apps/tonedef/#/">View on the web</a></li>
+                            <li><a href="https://github.com/Fortyseven/ToneDefWeb">Fork it on GitHub</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <!--------------->
+                <div class="contents red">
+                    <div class="title">Reddmo</div>
+                    <div class="screencaps">
+                        <img src="images/projects/red-1.png" class="thumbnail">
+                    </div>
+                    <div class="description">
+                        <p>It's not Cosmo! It's the internationally famous news magazine, Reddmo!</p>
+                        <p>Reddmo is an HTML5 toy that automatically generates a magazine cover using the images and headlines linked to off of Reddit.  The cover can be customized to use content from a specific subreddit, or from the front page.</p>
+                        <p>The outcome is hit or miss, but this was a seriously fun toy to hack on.</p>
+                    </div>
+                    <div class="links">
+                        <div class="section_name">Links</div>
+                        <ul>
+                            <li><a href="misc/reddmo/">View on the web</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div id="Footer">&copy;2014 Bytes Templar; All Rights Reserved</div>
+</div>
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function ( i, s, o, g, r, a, m )
+    {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function ()
+        {
+            (i[r].q = i[r].q || []).push( arguments )
+        }, i[r].l = 1 * new Date();
+        a = s.createElement( o ),
+                m = s.getElementsByTagName( o )[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore( a, m )
+    })( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
 
-    ga('create', 'UA-40660667-1', 'bytestemplar.com');
-    ga('require', 'displayfeatures');
-    ga('send', 'pageview');
+    ga( 'create', 'UA-40660667-1', 'bytestemplar.com' );
+    ga( 'require', 'displayfeatures' );
+    ga( 'send', 'pageview' );
 </script>
 </body>
 </html>

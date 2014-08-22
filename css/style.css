@@ -1,63 +1,3 @@
-/* CSS RESET */
-
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin:         0;
-    padding:        0;
-    border:         0;
-    font-size:      100%;
-    font:           inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing:  0;
-}
-
-/*****************************************/
-/*****************************************/
-
 @font-face {
     font-family: "HandelGoth";
     src:         url("../fonts/HandelGothic.eot");
@@ -83,49 +23,60 @@ body {
     margin:          0;
 }
 
-#Scanlines {
-    background: url("../images/scanlines.png");
-    min-width:  100%;
-    min-height: 100%;
-    position:   fixed;
-    top:        0;
-    left:       0;
-    z-index:    -10;
-    opacity:    0.8;
+/*#Scanlines {*/
+/*background: url("../images/scanlines.png");*/
+/*min-width:  100%;*/
+/*min-height: 100%;*/
+/*position:   fixed;*/
+/*top:        0;*/
+/*left:       0;*/
+/*z-index:    -10;*/
+/*opacity:    0.8;*/
+/*}*/
+
+body {
+    font-family:         HandelGoth, sans-serif;
+    font-size:           12pt;
+    -webkit-text-stroke: 0.25px;
 }
 
-#Content, #Header {
-    font-family:  HandelGoth;
-    width:        50em;
-    color:        darkred;
-    margin-left:  auto;
-    margin-right: auto;
-    background:   white;
-    padding:      1em;
-    /*border:       3px solid black;*/
-    margin-top:   1em;
-    opacity:      0.8;
-    box-shadow:   0px 0px 18px black;
+#Header {
+    text-align: center;
 }
 
 #Content {
-    background:     darkred;
-    opacity:        0.9;
-    overflow:       auto;
-    display:        flex;
-    align-content:  stretch;
-    flex-direction: column;
-    flex-flow:      wrap;
-    margin-bottom:  1em;
+    font-family: HandelGoth;
+    background:  darkred;
+    color:       black;
+    padding:     1em;
+    /*opacity:     0.8;*/
+    box-shadow:  0px 0px 18px black;
+    width:       100%;
+    clear:       both;
 }
 
+/*#Content {*/
+/*opacity:       0.9;*/
+/*overflow:      auto;*/
+/*display:        flex;*/
+/*align-content: stretch;*/
+/*flex-direction: column;*/
+/*flex-flow:      wrap;*/
+/*margin-bottom: 1em;*/
+/*}*/
+
 #Logo {
-    width:   240px;
-    opacity: 1;
+    /*width:   240px;*/
+    opacity:      1;
+    float:        left;
+    padding-left: 1em;
 }
 
 #Byline {
-    font-size: 2em;
+    font-size:      1.0em;
+    line-height:    1em;
+    padding-top:    0.25em;
+    padding-bottom: 0.5em;
 }
 
 #Footer {
@@ -137,37 +88,126 @@ body {
     margin-left:   auto;
     margin-right:  auto;
     width:         50em;
+    text-shadow:   0 0 8px black;
 }
 
+#Contact {
+    float:          right;
+    font-family:    "Roboto", sans-serif;
+    font-weight:    bold;
+    font-size:      1.0em;
+    text-transform: uppercase;
+    padding-top:    1em;
+    padding-right:  1em;
+}
+
+#Contact h2, #Contact ul {
+    padding: 0;
+    margin:  0;
+}
+
+#Contact h2 {
+    font-size:      1.5em;
+    padding-top:    0.25em;
+    padding-bottom: 0.25em;
+    color:          #AAA;
+}
+
+#Contact li {
+    display: inline;
+}
+
+#Contact a {
+    color:         darkred;
+    padding-left:  1em;
+    padding-right: 1em;
+}
+
+#Contact a:hover {
+    color: red;
+}
+
+#Header {
+    background-color: white;
+    margin:           0;
+    padding:          1em 0 0;
+}
+
+/* =================================== SECTIONS */
+
 .section {
-    width:      47.2%;
-    background: white;
-    /*border:     4px solid black;*/
+    background: #FFF;
+    width:      100%;
+    clear:      both;
+    border:     4px solid black;
     padding:    0.4em;
     text-align: left;
     margin:     0.3em;
-    /*box-shadow: 4px 4px 0px #400;*/
     box-shadow: 0px 0px 18px #000;
 }
 
-.section .title {
-    color:          black;
-    font-size:      1.5em;
-    padding-bottom: 0.5em;
-    font-weight:    bold;
-    float:          left;
+/*.section .head {*/
+    /*height: 48px;*/
+/*}*/
+
+
+/*.section .title {*/
+    /*color:          darkred;*/
+    /*font-size:      1.5em;*/
+    /*padding-bottom: 0.5em;*/
+    /*float:          left;*/
+
+/*}*/
+
+#SectionButtons {
+    height:        48px;
+    margin-bottom: 1em;
+    text-align: center;
 }
 
+#SectionButtons .button {
+    display:             inline-block;
+    padding:             6px 12px;
+    margin-bottom:       0;
+    font-size:           14px;
+    white-space:         nowrap;
+    vertical-align:      middle;
+    cursor:              pointer;
+    -webkit-user-select: none;
+    border-radius:       4px;
+    background:          white;
+    font-size:           1.5em;
+    box-shadow:          0px 0px 18px #000;
+    color:               black;
+
+}
+
+#SectionButtons .button:hover {
+    box-shadow: none;
+}
+
+#SectionButtons .selected {
+    background: black;
+    color:      white;
+    box-shadow: none;
+}
+
+#SectionButtons label {
+    line-height:   36px;
+    padding-right: 1em;
+}
+
+#SectionButtons .type,
 .section .type {
     width:    30px;
     height:   36px;
     float:    right;
     position: relative;
-
 }
 
 .section ul {
-    clear: both;
+    clear:      both;
+    list-style: none;
 }
 
 .section li {
@@ -191,41 +231,103 @@ body {
     font-weight:  bold;
 }
 
-.section .html5 {
+#SectionButtons .btn {
+    background: white;
+}
+
+#SectionButtons .type.html5 {
     background-image: url("../images/type_html5.png");
 }
 
-.section .android {
+#SectionButtons .type.android {
     background-image: url("../images/type_android.png");
 }
 
-.section .unity {
+#SectionButtons .type.unity {
     background-image: url("../images/type_unity.png");
 }
 
-.section .php5 {
+#SectionButtons .type.php5 {
     background-image: url("../images/type_php.png");
 }
 
-#Contact {
-    font-family:    "Roboto";
-    font-weight:    bold;
-    padding-top:    0.5em;
-    font-size:      1.1em;
-    text-transform: uppercase;
+/* =================================== SECTION MENU */
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
-#Contact li {
-    display: inline;
+button {
+    width:      200px;
+    padding:    0 1em 1em;
+    margin-top: 0.5em;
 }
 
-#Contact a {
-    color:         black;
-    padding-left:  0.25em;
-    padding-right: 0.25em;
-    font-weight:   bold;
+button img {
+    display: block;
+    width:   100%;
 }
 
-#Contact a:hover {
-    color: red;
+.btn:hover, .button_selected, .btn:focus {
+    background-color: darkred;
+    color:            white;
+    border:           none;
+}
+
+.menu_buttons {
+    padding-bottom: 1em;
+}
+
+.menu_content {
+    padding:    1em;
+    /*box-shadow: 0px 0px 18px black;*/
+    border-top: 1px solid black;
+    margin:     1em;
+}
+
+.menu_content .title {
+    float: none;
+    color: darkred;
+}
+
+.menu_content .screencaps {
+    float:        right;
+    padding-left: 1em;
+}
+
+.menu_content .description {
+    text-align:  justify;
+    line-height: 1.1em;
+    margin-left: 2em;
+}
+
+.menu_content .description, .menu_content .links {
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu_content .section_name {
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+.menu_content .links {
+    /*clear: both;*/
+}
+
+.menu_content .links a {
+    font-weight: bold;
+}
+
+.menu_content ul {
+    clear: none;
+    /*list-style: square;*/
+}
+
+.clearfix {
+    clear: both;
+}
+
+.screencaps img {
+    width: 400px;
 }
