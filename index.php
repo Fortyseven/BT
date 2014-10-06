@@ -17,8 +17,8 @@
 <body style="padding-top:50px">
     <?php require( 'nav.html' ); ?>
     <?php require( 'app/gallery_item.php' ); ?>
-    <div class="container">
-        <div id="Header">
+    <div class="panel">
+        <div id="Header" class="panel">
             <div id="Logo">
                 <img src="images/header_logo.png">
 
@@ -29,11 +29,6 @@
         </div>
         <!-- --------------------------- -->
         <div id="Content">
-            <!--div id="SectionButtons">
-                <div class="button" data-section-id="unity"><label>Unity</label><div class="type unity"></div></div>
-                <div class="button" data-section-id="android"><label>Android</label><div class="type android"></div></div>
-                <div class="button" data-section-id="html5"><label>HTML5</label><div class="type html5"></div></div>
-            </div-->
             <!-- --------------------------- -->
             <div class="section unity">
                 <div class="content">
