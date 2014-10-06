@@ -24,28 +24,7 @@
 
                 <div id="Byline">Web, Mobile, and<br/>Game Development</div>
             </div>
-            <div id="Contact">
-                <h2>Social</h2>
-                <ul>
-                    <!--<li><a href="#" target="_blank">About</a></li>-->
-                    <li><a href="https://www.linkedin.com/in/fortyseven/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://www.facebook.com/BytesTemplar" target="_blank">Facebook</a></li>
-                    <li><a href="https://www.youtube.com/user/BytesTemplarInc" target="_blank">YouTube</a></li>
-                    <li><a href="https://twitter.com/BytesTemplar" target="_blank">Twitter</a></li>
-                    <li><b><a href="http://bytestemplar.blogspot.com/">Blog</a></b></li>
-                </ul>
-                <h2>Voice Work</h2>
-                <ul>
-                    <li><a href="https://soundcloud.com/fortyseven" target="_blank">SoundCloud</a></li>
-                    <li><a href="http://voicebunny.com/actors/toby-deshane-Q9QCBK" target="_blank">Voice Bunny</a>
-                    </li>
-                </ul>
-                <h2>Code</h2>
-                <ul>
-                    <li><a href="https://bitbucket.org/fortyseven/">BitBucket</a></li>
-                    <li><a href="https://github.com/Fortyseven/">GitHub</a></li>
-                </ul>
-            </div>
+            <?php require_once('app/contact_block.html'); ?>
             <div class="clearfix"></div>
         </div>
         <!-- --------------------------- -->
