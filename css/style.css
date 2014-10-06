@@ -17,39 +17,28 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 
 body {
-    background:      url("../images/bg2.png") no-repeat bottom center fixed;
-    background-size: contain;
-    /*padding:         0;*/
-    /*margin:          0;*/
-    padding-top:     50px; /* for navbar */
-}
-
-body {
     font-family:         "HandelGoth", sans-serif;
     font-size:           12pt;
+    background:          url("../images/bg2.png") no-repeat bottom center fixed;
+    background-size:     contain;
+    /*padding:         0;*/
+    /*margin:          0;*/
+    max-width:           1024px;
+    padding-top:         50px; /* for navbar */
     -webkit-text-stroke: 0.25px;
 }
 
 #Header {
-    text-align: right;
+    text-align:    right;
+    margin-bottom: 1em !important;
 }
 
 #Content {
     font-family:   "HandelGoth", sans-serif;
     background:    darkred;
     color:         black;
-    /*padding:       0.5em;*/
-    /*margin: 1em;*/
-    /*opacity:       0.95;*/
-    /*box-shadow:    0px 0px 18px black;*/
-    /*width:         100%;*/
-    /*clear:         both;*/
-    /*border-radius: 8px;*/
-}
-
-#Logo {
-    /*float:        left;*/
-    /*padding-left: 1em;*/
+    box-shadow:    0px 0px 18px black;
+    border-radius: 8px;
 }
 
 #Byline {
@@ -58,19 +47,15 @@ body {
     padding-top:    0.25em;
     padding-bottom: 0.5em;
     display:        block;
-    text-align:     center;
+    text-align:     left;
 }
 
 #Footer {
     font-size:     small;
     color:         white;
-    /*text-align:    center;*/
     font-style:    italic;
     margin-bottom: 1em;
-    font-family: "Roboto", sans-serif;
-    /*margin-left:   auto;*/
-    /*margin-right:  auto;*/
-    /*width:         50em;*/
+    font-family:   "Roboto", sans-serif;
     text-shadow:   0 0 8px black;
 }
 
@@ -82,12 +67,9 @@ body {
 
 #Contact {
     font-family:    "Roboto", sans-serif;
-    /*float:          right;*/
     font-weight:    bold;
     font-size:      1.1em;
     text-transform: uppercase;
-    /*padding-top:    1em;*/
-    /*padding-right:  1em;*/
     line-height:    1.8em;
 }
 
@@ -101,7 +83,7 @@ body {
     font-weight:         normal;
     padding-top:         1em;
     padding-bottom:      0.25em;
-    color:               #DDD;
+    color:               #DDDDDD;
     font-family:         "Atari", sans-serif;
     letter-spacing:      -0.05em;
     line-height:         0;
@@ -121,90 +103,7 @@ body {
     color: red;
 }
 
-/* =================================== SECTION BUTTONS */
-
-/*#SectionButtons {*/
-    /*text-align: center;*/
-    /*padding:    1em;*/
-/*}*/
-
-/*#SectionButtons .button {*/
-    /*display:             inline-block;*/
-    /*padding:             6px 22px;*/
-    /*white-space:         nowrap;*/
-    /*vertical-align:      middle;*/
-    /*cursor:              pointer;*/
-    /*-webkit-user-select: none;*/
-    /*border-radius:       8px;*/
-    /*background:          white;*/
-    /*font-size:           1.5em;*/
-    /*box-shadow:          0px 0px 18px #000;*/
-    /*color:               black;*/
-    /*-webkit-text-stroke: 0;*/
-    /*height:              48px;*/
-    /*margin:              5px 5px;*/
-/*}*/
-
-/*#SectionButtons .button:hover {*/
-    /*box-shadow: none;*/
-    /*position:   relative;*/
-    /*top:        2px;*/
-/*}*/
-
-/*#SectionButtons .selected {*/
-    /*background:  black;*/
-    /*color:       white;*/
-    /*box-shadow:  none;*/
-    /*text-shadow: 0 0 8px red;*/
-    /*position:    relative;*/
-    /*top:         2px;*/
-/*}*/
-
-/*#SectionButtons label {*/
-    /*line-height:   36px;*/
-    /*padding-right: 1em;*/
-    /*margin:        0;*/
-    /*float:         left;*/
-/*}*/
-
-/*#SectionButtons .type {*/
-    /*width:  30px;*/
-    /*height: 36px;*/
-    /*float:  right;*/
-/*}*/
-
-/*#SectionButtons .btn {*/
-    /*background: white;*/
-/*}*/
-
-/*#SectionButtons .type.html5 {*/
-    /*background-image: url("../images/type_html5.png");*/
-/*}*/
-
-/*#SectionButtons .type.android {*/
-    /*background-image: url("../images/type_android.png");*/
-/*}*/
-
-/*#SectionButtons .type.unity {*/
-    /*background-image: url("../images/type_unity.png");*/
-/*}*/
-
-/*#SectionButtons .type.php5 {*/
-    /*background-image: url("../images/type_php.png");*/
-/*}*/
-
 /* =================================== SECTIONS */
-
-.section {
-    background:    #FFF;
-    /*clear:         both;*/
-    /*border:        4px solid black;*/
-    /*padding:       0.5em;*/
-    /*text-align:    justify;*/
-    /*margin:        1em;*/
-    /*box-shadow:    0px 0px 18px #000;*/
-    /*border-radius: 8px;*/
-}
 
 .section ul {
     /*clear:      both;*/
@@ -225,23 +124,34 @@ body {
 }
 
 .section li span {
-    font-family:  "Roboto", sans-serif;
-    color:        black;
+    font-family: "Roboto", sans-serif;
+    color:       black;
     /*padding-left: 0.5em;*/
-    font-size:    0.9em;
-    font-weight:  bold;
+    font-size:   0.9em;
+    font-weight: bold;
 }
 
-/* =================================== SECTION ITEM */
+/* =================================== GALLERY ENTRY */
 
 .gallery_entry {
-    padding: 1.5em;
+    background:    #FFFFFF;
+    /*clear:         both;*/
+    border:        4px solid black;
+    padding:       1em;
+    /*text-align:    justify;*/
+    margin:        2em;
+    margin-top:    0;
+    margin-bottom: 1em;
+    box-shadow:    0px 0px 18px #000000;
+    border-radius: 8px;
 }
+
 .gallery_title {
-    color:     darkred;
-    font-size: 2em;
-    line-height: 1em;
+    color:          darkred;
+    font-size:      2em;
+    line-height:    1em;
     padding-bottom: 0.5em;
+    text-align:     center;
 }
 
 .gallery_description {
@@ -251,7 +161,7 @@ body {
     /*margin-left: 2em;*/
 }
 
-.gallery_content .description, .gallery_content .links {
+.gallery_links {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -260,45 +170,47 @@ body {
     /*padding-top: 1em;*/
 }
 
-.gallery_content .links {
-    /*clear: both;*/
+.gallery_links {
+    padding-top:    1em;
+    padding-bottom: 1em;
 }
 
-.gallery_content .links a {
+.gallery_links_head {
     font-weight: bold;
+    font-size:   1.2em;
 }
 
-.gallery_content ul {
-    /*clear: none;*/
-    /*list-style: square;*/
+.gallery_links a {
+    font-weight:     bold;
+    color:           darkred;
+    text-decoration: underline;
 }
 
-/*.clearfix {*/
-    /*clear: both;*/
-/*}*/
+.gallery_links li {
+    padding-top: 0.5em;
+}
 
-/*.screencaps img {*/
-    /*width: 400px;*/
-/*}*/
-
-
-.nav-icon {
-    padding-right:  1em;
-    height:         1em;
+.gallery_links ul {
+    clear:      none;
+    list-style: square;
 }
 
 .gallery_head {
-    font-size: 2em;
+    font-size:      2em;
     text-transform: uppercase;
-    border-bottom: 1px solid darkred;
-    padding-bottom: 0.5em;
-    margin-bottom: 0.5em;
+    color:          white;
+    padding-bottom: 0.25em;
 }
+
 .gallery_head img {
     vertical-align: middle;
 }
 
 .gallery_image {
     width: 320px;
-    height: 200px;
+}
+
+.nav-icon {
+    padding-right: 1em;
+    height:        1em;
 }
