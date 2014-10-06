@@ -16,18 +16,17 @@
 </head>
 <body>
 <div class="container-fluid">
-    <?php require( 'nav.html' ); ?>
+    <?php require( 'app/nav.html' ); ?>
     <?php require( 'app/gallery_item.php' ); ?>
-    <div id="Header" class="row">
-        <div id="Logo" class="col-xs-12 col-md-5">
-            <img class="img-responsive" src="images/header_logo.png"/>
-
-            <div id="Byline" class="pull-left">Web, Mobile, and<br/>Game Development</div>
-        </div>
-        <div class="col-xs-12 col-md-7">
-            <?php require_once( 'app/contact_block.html' ); ?>
-        </div>
-    </div>
+<!--    <div id="Header" class="row">-->
+<!--        <div id="Logo" class="col-xs-12 col-md-5">-->
+<!--            <img class="img-responsive" src="images/header_logo.png"/>-->
+<!--            <div id="Byline" class="pull-left">Web, Mobile, and<br/>Game Development</div>-->
+<!--        </div>-->
+<!--        <div class="col-xs-12 col-md-7">-->
+<!--            --><?php //require_once( 'app/contact_block.html' ); ?>
+<!--        </div>-->
+<!--    </div>-->
     <!-- --------------------------- -->
     <div id="Content">
         <div class="row">
@@ -196,6 +195,7 @@
                 </div>
             </div>
         </div>
+        <?php require( 'app/nav_footer.html' ); ?>
     </div>
     <div class="row">
         <div id="Footer" class="col-xs-12 text-center">&copy;2014 Bytes Templar; All Rights Reserved</div>

@@ -22,9 +22,9 @@ $(document).ready(function() {
                 {
                     event.preventDefault();
                     $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
-                        //location.hash = target;
+                        location.hash = target;
                         //document.location.hash = target;
-                        history.pushState(null, null, target);
+                        //history.pushState(null, null, target);
                     });
                 });
             }

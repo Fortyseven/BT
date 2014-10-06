@@ -11,10 +11,10 @@ function galleryItem( $id, $title, $screencap_array, $description, $links_array 
                 <?php echo $description; ?>
                 <?php if ( isset( $links_array ) ) { ?>
                     <div class="gallery_links">
-                        <div class="gallery_links_head">Links</div>
+<!--                        <div class="gallery_links_head">Links</div>-->
                         <ul>
                             <?php foreach ( $links_array as $url => $name ) { ?>
-                                <li><a href="<?php echo $url; ?>"><?php echo $name; ?></a></li>
+                                <li><span class="glyphicon glyphicon-link"></span> <a href="<?php echo $url; ?>"><?php echo $name; ?></a></li>
                             <?php } ?>
                         </ul>
                     </div>

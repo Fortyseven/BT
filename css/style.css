@@ -23,9 +23,10 @@ body {
     background-size:     contain;
     /*padding:         0;*/
     /*margin:          0;*/
-    max-width:           1024px;
-    padding-top:         50px; /* for navbar */
+    /*max-width:           1024px;*/
+    /*padding-top:         50px; *//* for navbar */
     -webkit-text-stroke: 0.25px;
+    padding-top: 1em;
 }
 
 #Header {
@@ -47,7 +48,7 @@ body {
     padding-top:    0.25em;
     padding-bottom: 0.5em;
     display:        block;
-    text-align:     left;
+    text-align:     center;
 }
 
 #Footer {
@@ -162,7 +163,8 @@ body {
 }
 
 .gallery_links {
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-weight: normal;
 }
 
 .gallery_content .section_name {
@@ -181,18 +183,21 @@ body {
 }
 
 .gallery_links a {
-    font-weight:     bold;
+    /*font-weight:     bold;*/
+    font-family:     "HandelGoth", sans-serif;
     color:           darkred;
     text-decoration: underline;
 }
 
 .gallery_links li {
-    padding-top: 0.5em;
+    padding-top: 0.75em;
 }
 
 .gallery_links ul {
     clear:      none;
-    list-style: square;
+    list-style: none;
+    padding:    0;
+    margin:     0;
 }
 
 .gallery_head {
@@ -212,5 +217,32 @@ body {
 
 .nav-icon {
     padding-right: 1em;
-    height:        1em;
+    height:        1.2em;
+}
+
+/* make sidebar nav vertical */
+@media (min-width: 768px) {
+    .sidebar-nav .navbar .navbar-collapse {
+        padding:    0;
+        max-height: none;
+        /*position: fixed;*/
+    }
+
+    .sidebar-nav .navbar ul {
+        float: none;
+    }
+
+    .sidebar-nav .navbar ul:not {
+        display: block;
+    }
+
+    .sidebar-nav .navbar li {
+        float:   none;
+        display: block;
+    }
+
+    .sidebar-nav .navbar li a {
+        padding-top:    12px;
+        padding-bottom: 12px;
+    }
 }
