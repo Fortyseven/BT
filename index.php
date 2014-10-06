@@ -2,13 +2,9 @@
 <html>
 <head>
     <title>Bytes Templar - Web, Gaming, and Mobile Software Development</title>
-
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="vendor/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
-    <script src="vendor/jquery-2.1.1.min.js"></script>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
+    <link href="css/bootstrap_overrides.css" rel="stylesheet"/>
     <link rel="icon" href="images/favicon.png" sizes="32x32"/>
     <link rel="icon" href="images/favicon.png" sizes="48x48"/>
     <link rel="stylesheet" href="css/style.css"/>
@@ -18,15 +14,6 @@
 <div class="container-fluid">
     <?php require( 'app/nav.html' ); ?>
     <?php require( 'app/gallery_item.php' ); ?>
-<!--    <div id="Header" class="row">-->
-<!--        <div id="Logo" class="col-xs-12 col-md-5">-->
-<!--            <img class="img-responsive" src="images/header_logo.png"/>-->
-<!--            <div id="Byline" class="pull-left">Web, Mobile, and<br/>Game Development</div>-->
-<!--        </div>-->
-<!--        <div class="col-xs-12 col-md-7">-->
-<!--            --><?php //require_once( 'app/contact_block.html' ); ?>
-<!--        </div>-->
-<!--    </div>-->
     <!-- --------------------------- -->
     <div id="Content">
         <div class="row">
@@ -195,12 +182,15 @@
                 </div>
             </div>
         </div>
+<!--        <div class="row">-->
+            <div id="Footer" class="col-xs-12 text-center">&copy;2014 Bytes Templar; All Rights Reserved</div>
+<!--        </div>-->
         <?php require( 'app/nav_footer.html' ); ?>
     </div>
-    <div class="row">
-        <div id="Footer" class="col-xs-12 text-center">&copy;2014 Bytes Templar; All Rights Reserved</div>
-    </div>
 </div>
+<script src="vendor/jquery-2.1.1.min.js"></script>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/smooth_scroll.js"></script>
 <script src="js/app.js"></script>
