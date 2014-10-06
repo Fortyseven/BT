@@ -121,75 +121,75 @@ body {
 
 /* =================================== SECTION BUTTONS */
 
-#SectionButtons {
-    text-align: center;
-    padding:    1em;
-}
+/*#SectionButtons {*/
+    /*text-align: center;*/
+    /*padding:    1em;*/
+/*}*/
 
-#SectionButtons .button {
-    display:             inline-block;
-    padding:             6px 22px;
-    white-space:         nowrap;
-    vertical-align:      middle;
-    cursor:              pointer;
-    -webkit-user-select: none;
-    border-radius:       8px;
-    background:          white;
-    font-size:           1.5em;
-    box-shadow:          0px 0px 18px #000;
-    color:               black;
-    -webkit-text-stroke: 0;
-    height:              48px;
-    margin:              5px 5px;
-}
+/*#SectionButtons .button {*/
+    /*display:             inline-block;*/
+    /*padding:             6px 22px;*/
+    /*white-space:         nowrap;*/
+    /*vertical-align:      middle;*/
+    /*cursor:              pointer;*/
+    /*-webkit-user-select: none;*/
+    /*border-radius:       8px;*/
+    /*background:          white;*/
+    /*font-size:           1.5em;*/
+    /*box-shadow:          0px 0px 18px #000;*/
+    /*color:               black;*/
+    /*-webkit-text-stroke: 0;*/
+    /*height:              48px;*/
+    /*margin:              5px 5px;*/
+/*}*/
 
-#SectionButtons .button:hover {
-    box-shadow: none;
-    position:   relative;
-    top:        2px;
-}
+/*#SectionButtons .button:hover {*/
+    /*box-shadow: none;*/
+    /*position:   relative;*/
+    /*top:        2px;*/
+/*}*/
 
-#SectionButtons .selected {
-    background:  black;
-    color:       white;
-    box-shadow:  none;
-    text-shadow: 0 0 8px red;
-    position:    relative;
-    top:         2px;
-}
+/*#SectionButtons .selected {*/
+    /*background:  black;*/
+    /*color:       white;*/
+    /*box-shadow:  none;*/
+    /*text-shadow: 0 0 8px red;*/
+    /*position:    relative;*/
+    /*top:         2px;*/
+/*}*/
 
-#SectionButtons label {
-    line-height:   36px;
-    padding-right: 1em;
-    margin:        0;
-    float:         left;
-}
+/*#SectionButtons label {*/
+    /*line-height:   36px;*/
+    /*padding-right: 1em;*/
+    /*margin:        0;*/
+    /*float:         left;*/
+/*}*/
 
-#SectionButtons .type {
-    width:  30px;
-    height: 36px;
-    float:  right;
-}
+/*#SectionButtons .type {*/
+    /*width:  30px;*/
+    /*height: 36px;*/
+    /*float:  right;*/
+/*}*/
 
-#SectionButtons .btn {
-    background: white;
-}
+/*#SectionButtons .btn {*/
+    /*background: white;*/
+/*}*/
 
-#SectionButtons .type.html5 {
-    background-image: url("../images/type_html5.png");
-}
+/*#SectionButtons .type.html5 {*/
+    /*background-image: url("../images/type_html5.png");*/
+/*}*/
 
-#SectionButtons .type.android {
-    background-image: url("../images/type_android.png");
-}
+/*#SectionButtons .type.android {*/
+    /*background-image: url("../images/type_android.png");*/
+/*}*/
 
-#SectionButtons .type.unity {
-    background-image: url("../images/type_unity.png");
-}
+/*#SectionButtons .type.unity {*/
+    /*background-image: url("../images/type_unity.png");*/
+/*}*/
 
-#SectionButtons .type.php5 {
-    background-image: url("../images/type_php.png");
-}
+/*#SectionButtons .type.php5 {*/
+    /*background-image: url("../images/type_php.png");*/
+/*}*/
 
 /* =================================== SECTIONS */
 
@@ -230,81 +230,69 @@ body {
     font-weight:  bold;
 }
 
-.btn {
-    font-family:   'Roboto', sans-serif;
-    font-weight:   bold;
-    text-overflow: ellipsis;
+/*.btn {*/
+    /*font-family:   'Roboto', sans-serif;*/
+    /*font-weight:   bold;*/
+    /*text-overflow: ellipsis;*/
 
-}
+/*}*/
 
-.item_buttons .button {
-    width:          200px;
-    text-overflow:  ellipsis;
-    box-shadow:     0px 0px 9px #000;
-    padding-bottom: 1em;
-}
+/*.item_buttons .button {*/
+    /*width:          200px;*/
+    /*text-overflow:  ellipsis;*/
+    /*box-shadow:     0px 0px 9px #000;*/
+    /*padding-bottom: 1em;*/
+/*}*/
 
-.item_buttons img {
-    display: block;
-    width:   100%;
-}
-
-.btn:hover, .button_selected, .btn:focus {
-    background-color: black;
-    color:            white;
-    text-shadow:      0 0 8px red;
-    border:           none !important;
-    box-shadow:       none !important;
-}
+/*.item_buttons img {*/
+    /*display: block;*/
+    /*width:   100%;*/
+/*}*/
 
 /* =================================== SECTION ITEM */
-.item_buttons {
-    padding-bottom: 1em;
-    padding-top:    1em;
-}
 
-.item_content {
+.gallery_content {
     padding:    1em;
     /*box-shadow: 0px 0px 18px black;*/
     border-top: 1px solid black;
     margin:     1em;
 }
 
-.item_content .title {
+.gallery_content .title {
     float:     none;
     color:     darkred;
     font-size: 2em;
 }
 
-.item_content .screencaps {
+.gallery_content .screencaps {
     float:        right;
     padding-left: 1em;
 }
 
-.item_content .description {
+.gallery_content .description {
     text-align:  justify;
     line-height: 1.1em;
     margin-left: 2em;
 }
 
-.item_content .description, .item_content .links {
+.gallery_content .description, .gallery_content .links {
     font-family: 'Roboto', sans-serif;
 }
 
-.item_content .section_name {
+.gallery_content .section_name {
     font-weight: bold;
     padding-top: 1em;
 }
 
-.item_content .links {
+.gallery_content .links {
     /*clear: both;*/
 }
 
-.item_content .links a {
+.gallery_content .links a {
     font-weight: bold;
 }
 
-.item_content ul {
+.gallery_content ul {
     clear: none;
     /*list-style: square;*/
 }
@@ -315,4 +303,19 @@ body {
 
 .screencaps img {
     width: 400px;
+}
+
+
+.nav-icon {
+    padding-right:  1em;
+    height:         1em;
+}
+
+.gallery_head {
+    font-size: 2em;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+.gallery_head img {
+    vertical-align: super;
 }
