@@ -14,28 +14,50 @@
     <link rel="stylesheet" href="css/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
-<body style="padding-top:50px">
-    <?php require( 'nav.html' ); ?>
-    <?php require( 'app/gallery_item.php' ); ?>
-    <div class="panel">
-        <div id="Header" class="panel">
-            <div id="Logo">
-                <img src="images/header_logo.png">
-
-                <div id="Byline">Web, Mobile, and<br/>Game Development</div>
+<body>
+    <div class="container-fluid">
+        <?php require( 'nav.html' ); ?>
+        <?php require( 'app/gallery_item.php' ); ?>
+        <div class="row">
+            <div id="Header">
+                <div id="Logo" class="col-md-6">
+                    <img class="img-responsive" src="images/header_logo.png"/>
+                    <div id="Byline" class="pull-left">Web, Mobile, and<br/>Game Development</div>
+                </div>
+                <?php require_once('app/contact_block.html'); ?>
             </div>
-            <?php require_once('app/contact_block.html'); ?>
-            <div class="clearfix"></div>
         </div>
         <!-- --------------------------- -->
-        <div id="Content">
+        <div class="row">
             <!-- --------------------------- -->
-            <div class="section unity">
-                <div class="content">
-                    <div class="gallery_head" align="center"><img src="images/type_unity.png"/> Unity</div>
-                    <div class="gallery_content">
+            <div class="col-xs-12">
+                    <div class="row col-xs-12 gallery_head center-block text-center text-capitalize"><img src="images/type_unity.png"/> Unity</div>
+                    <div class="row">
                         <!--------------->
                         <?php
+                            galleryItem( "LaserSmash",
+                                         "LaserSmash",
+                                         array( "http://38.media.tumblr.com/771cd36f91167dbd91bca35c5e0ca32e/tumblr_nbumuhSSkL1tkfhhyo1_400.png" ),
+                                         "<p><i>\"A time long ago, a lone laser defense platform was our people's last line of defense against a raging meteor
+                                          storm. And now, the storm has come again -- and this time, our enemies are taking advantage of it. Defend us, once
+                                          more!\"</i></p>".
+                                         "As a life long fan of Mattel's amazing Astrosmash arcade shooter for the Intellivision, creating a remake of it has
+                                          been something I've always started, but never finished. I have half-finished versions in C++, Flash, and more. When
+                                          I finally settled on Unity for game development, I wanted to get this out of my system once and for all. And I wanted
+                                          to create it from scratch, but try to stay somewhat faithful to the spirit of the original game.",
+                                         array( "http://btsmash.tumblr.com/"                       => "Development Blog",
+                                                "http://gamejolt.com/games/arcade/lasersmash/34900/" => "Older, playable WIP Version" ) );
+
+                            galleryItem( "GalaxyLanes",
+                                         "Galaxy Lanes",
+                                         array( "images/projects/galx.jpg" ),
+                                         "Yup! Bowling. Completely out of left field for me. The Ludum Dare theme fulfillment of \"connected worlds\" was intended
+                                         to be that the bowling balls would all look like planets, and they'd \"connect\" with the pins down the end. A stretch, I
+                                         admit it. Unfortunately, this is incomplete. I got a lot done in the 72-hour period, but I did more work with Blender than
+                                         I'd expected to, among other things.",
+                                         array( "http://galaxylanes.tumblr.com/"                       => "Development Blog",
+                                                "http://gamejolt.com/games/sports/galaxy-lanes/33217/" => "Playable WIP LD48 Version" ) );
+
                             galleryItem( "WhackABurster",
                                          "Whack-A-Burster",
                                          array( "http://i.gjcdn.net/imgserver/screenshot-thumbnail/320x240/58867.jpg" ),
@@ -51,15 +73,6 @@
                                                 "misc/ld48/29/"                                                         => "Original LD48 Version",
                                                 "http://www.ludumdare.com/compo/ludum-dare-29/?action=preview&uid=2847" => "LD29 Entry Page" ) );
 
-                            galleryItem( "GalaxyLanes",
-                                         "Galaxy Lanes",
-                                         array( "images/projects/galx.jpg" ),
-                                         "Yup! Bowling. Completely out of left field for me. The Ludum Dare theme fulfillment of \"connected worlds\" was intended
-                                         to be that the bowling balls would all look like planets, and they'd \"connect\" with the pins down the end. A stretch, I
-                                         admit it. Unfortunately, this is incomplete. I got a lot done in the 72-hour period, but I did more work with Blender than
-                                         I'd expected to, among other things.",
-                                         array( "http://galaxylanes.tumblr.com/"                       => "Development Blog",
-                                                "http://gamejolt.com/games/sports/galaxy-lanes/33217/" => "Playable WIP LD48 Version" ) );
 
                             galleryItem( "BrownianMotionSimulator",
                                          "Brownian Motion Simulator",
@@ -101,14 +114,15 @@
                                          abuse. Barely any skill with Blender here.</p>",
                                          array( "misc/unity/chips/" => "Web version" ) );
                         ?>
-                    </div>
                 </div>
             </div>
+        </div>
             <!-- --------------------------- -->
-            <div class="section android">
-                <div class="content">
-                    <div class="gallery_head" align="center"><img src="images/type_android.png"/> Android</div>
-                    <div class="gallery_content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <div class="row col-xs-12 gallery_head center-block text-center text-capitalize"><img src="images/type_android.png"/> Android</div>
+                    <div class="row">
                         <!--------------->
                         <?php
                             galleryItem( "ToneDef",
@@ -152,12 +166,12 @@
                     </div>
                 </div>
             </div>
-
+        </div>
             <!-- --------------------------- -->
-            <div class="section html5">
-                <div class="content">
-                    <div class="gallery_head" align="center"><img src="images/type_html5.png"/> HTML5</div>
-                    <div class="gallery_content">
+        <div class="row">
+            <div class="col-xs-12">
+                    <div class="row col-xs-12 gallery_head center-block text-center text-capitalize"><img src="images/type_html5.png"/> HTML5</div>
+                    <div>
                         <?php
                             galleryItem( "ToneDefWebEdition",
                                          "ToneDef Web Edition",
@@ -171,18 +185,19 @@
                                          "Reddmo",
                                          array( "images/projects/red-1.png" ),
                                          "<p>It's not Cosmo! It's the internationally famous news magazine, Reddmo!</p>
-                                        <p>Reddmo is an HTML5 toy that automatically generates a magazine cover using the images and headlines linked
+                                          <p>Reddmo is an HTML5 toy that automatically generates a magazine cover using the images and headlines linked
                                            to off of Reddit.  The cover can be customized to use content from a specific subreddit, or from the front
                                            page.</p>
-                                        <p>The outcome is hit or miss, but this was a seriously fun toy to hack on.</p>",
+                                          <p>The outcome is hit or miss, but this was a seriously fun toy to hack on.</p>",
                                          array( "misc/reddmo/"                         => "View on the Web",
                                                 "https://github.com/Fortyseven/Reddmo" => "Fork it on GitHub" ) );
                         ?>
                     </div>
-                </div>
             </div>
         </div>
-        <div id="Footer">&copy;2014 Bytes Templar; All Rights Reserved</div>
+        <div class="row">
+            <div id="Footer" class="col-xs-12 text-center">&copy;2014 Bytes Templar; All Rights Reserved</div>
+        </div>
     </div>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/smooth_scroll.js"></script>

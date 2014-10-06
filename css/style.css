@@ -19,8 +19,9 @@
 body {
     background:      url("../images/bg2.png") no-repeat bottom center fixed;
     background-size: contain;
-    padding:         0;
-    margin:          0;
+    /*padding:         0;*/
+    /*margin:          0;*/
+    padding-top:     50px; /* for navbar */
 }
 
 body {
@@ -37,18 +38,18 @@ body {
     font-family:   "HandelGoth", sans-serif;
     background:    darkred;
     color:         black;
-    padding-bottom:       0.5em;
-    opacity:       0.95;
-    box-shadow:    0px 0px 18px black;
-    width:         100%;
-    clear:         both;
-    border-radius: 8px;
+    /*padding:       0.5em;*/
+    /*margin: 1em;*/
+    /*opacity:       0.95;*/
+    /*box-shadow:    0px 0px 18px black;*/
+    /*width:         100%;*/
+    /*clear:         both;*/
+    /*border-radius: 8px;*/
 }
 
 #Logo {
-    opacity:      1;
-    float:        left;
-    padding-left: 1em;
+    /*float:        left;*/
+    /*padding-left: 1em;*/
 }
 
 #Byline {
@@ -63,12 +64,13 @@ body {
 #Footer {
     font-size:     small;
     color:         white;
-    text-align:    center;
+    /*text-align:    center;*/
     font-style:    italic;
     margin-bottom: 1em;
-    margin-left:   auto;
-    margin-right:  auto;
-    width:         50em;
+    font-family: "Roboto", sans-serif;
+    /*margin-left:   auto;*/
+    /*margin-right:  auto;*/
+    /*width:         50em;*/
     text-shadow:   0 0 8px black;
 }
 
@@ -80,12 +82,12 @@ body {
 
 #Contact {
     font-family:    "Roboto", sans-serif;
-    float:          right;
+    /*float:          right;*/
     font-weight:    bold;
     font-size:      1.1em;
     text-transform: uppercase;
-    padding-top:    1em;
-    padding-right:  1em;
+    /*padding-top:    1em;*/
+    /*padding-right:  1em;*/
     line-height:    1.8em;
 }
 
@@ -195,22 +197,22 @@ body {
 
 .section {
     background:    #FFF;
-    clear:         both;
-    border:        4px solid black;
-    padding:       0.5em;
-    text-align:    left;
-    margin:        1em;
-    box-shadow:    0px 0px 18px #000;
-    border-radius: 8px;
+    /*clear:         both;*/
+    /*border:        4px solid black;*/
+    /*padding:       0.5em;*/
+    /*text-align:    justify;*/
+    /*margin:        1em;*/
+    /*box-shadow:    0px 0px 18px #000;*/
+    /*border-radius: 8px;*/
 }
 
 .section ul {
-    clear:      both;
+    /*clear:      both;*/
     list-style: none;
 }
 
 .section li {
-    padding-bottom: 0.5em;
+    /*padding-bottom: 0.5em;*/
 }
 
 .section li a {
@@ -225,54 +227,28 @@ body {
 .section li span {
     font-family:  "Roboto", sans-serif;
     color:        black;
-    padding-left: 0.5em;
+    /*padding-left: 0.5em;*/
     font-size:    0.9em;
     font-weight:  bold;
 }
 
-/*.btn {*/
-    /*font-family:   'Roboto', sans-serif;*/
-    /*font-weight:   bold;*/
-    /*text-overflow: ellipsis;*/
-
-/*}*/
-
-/*.item_buttons .button {*/
-    /*width:          200px;*/
-    /*text-overflow:  ellipsis;*/
-    /*box-shadow:     0px 0px 9px #000;*/
-    /*padding-bottom: 1em;*/
-/*}*/
-
-/*.item_buttons img {*/
-    /*display: block;*/
-    /*width:   100%;*/
-/*}*/
-
 /* =================================== SECTION ITEM */
 
-.gallery_content {
-    padding:    1em;
-    /*box-shadow: 0px 0px 18px black;*/
-    border-top: 1px solid black;
-    margin:     1em;
+.gallery_entry {
+    padding: 1.5em;
 }
-
-.gallery_content .title {
-    float:     none;
+.gallery_title {
     color:     darkred;
     font-size: 2em;
+    line-height: 1em;
+    padding-bottom: 0.5em;
 }
 
-.gallery_content .screencaps {
-    float:        right;
-    padding-left: 1em;
-}
-
-.gallery_content .description {
+.gallery_description {
+    font-family: "Roboto", sans-serif;
     text-align:  justify;
     line-height: 1.1em;
-    margin-left: 2em;
+    /*margin-left: 2em;*/
 }
 
 .gallery_content .description, .gallery_content .links {
@@ -281,7 +257,7 @@ body {
 
 .gallery_content .section_name {
     font-weight: bold;
-    padding-top: 1em;
+    /*padding-top: 1em;*/
 }
 
 .gallery_content .links {
@@ -293,17 +269,17 @@ body {
 }
 
 .gallery_content ul {
-    clear: none;
+    /*clear: none;*/
     /*list-style: square;*/
 }
 
-.clearfix {
-    clear: both;
-}
+/*.clearfix {*/
+    /*clear: both;*/
+/*}*/
 
-.screencaps img {
-    width: 400px;
-}
+/*.screencaps img {*/
+    /*width: 400px;*/
+/*}*/
 
 
 .nav-icon {
@@ -313,9 +289,16 @@ body {
 
 .gallery_head {
     font-size: 2em;
-    vertical-align: middle;
     text-transform: uppercase;
+    border-bottom: 1px solid darkred;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
 .gallery_head img {
-    vertical-align: super;
+    vertical-align: middle;
+}
+
+.gallery_image {
+    width: 320px;
+    height: 200px;
 }

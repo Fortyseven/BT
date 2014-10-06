@@ -2,27 +2,34 @@
 function galleryItem( $id, $title, $screencap_array, $description, $links_array )
 {
     ?>
-    <div class="galleryItem" id="<?php echo $id; ?>">
-        <div class="title"><?php echo $title; ?></div>
-        <?php if (isset( $screencap_array )) { ?>
-            <div class="screencaps">
-                <?php foreach ( $screencap_array as $image ) { ?>
-                    <img src="<?php echo $image; ?>" class="thumbnail">
+    <div id="<?php echo $id; ?>" class="gallery_entry">
+        <div class="row">
+            <div class="gallery_title col-xs-12"><?php echo $title; ?></div>
+        </div>
+        <div class="row">
+            <div class="gallery_description col-xs-12 col-md-6">
+                <?php echo $description; ?>
+                <?php if ( isset( $links_array ) ) { ?>
+                    <div class="">Links</div>
+                    <ul>
+                        <?php foreach ( $links_array as $url => $name ) { ?>
+                            <li><a href="<?php echo $url; ?>"><?php echo $name; ?></a></li>
+                        <?php } ?>
+                    </ul>
                 <?php } ?>
             </div>
-        <?php } ?>
-        <div class="description"><?php echo $description; ?></div>
-        <div class="links">
-            <?php if ( isset( $links_array ) ) { ?>
-                <div class="section_name">Links</div>
-                <ul>
-                    <?php foreach ( $links_array as $url => $name ) { ?>
-                        <li><a href="<?php echo $url; ?>"><?php echo $name; ?></a></li>
+            <?php if (isset( $screencap_array )) { ?>
+                <div class="col-xs-12 col-md-6">
+                    <?php foreach ( $screencap_array as $image ) { ?>
+                        <a class="" href="#"><img class="img-responsive pull-right" src="<?php echo $image; ?>"></a>
                     <?php } ?>
-                </ul>
+                </div>
             <?php } ?>
         </div>
-        <div class="clearfix"></div>
+        <div class="row">
+        <div class="">
+        </div>
+        </div>
     </div>
     <?php
 }
