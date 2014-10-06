@@ -17,9 +17,7 @@
     <!-- --------------------------- -->
     <div id="Content">
         <div class="row">
-            <div class="row col-xs-12 gallery_head center-block text-center text-capitalize"><img
-                    src="images/type_unity.png"/> Unity
-            </div>
+            <div class="row col-xs-12 gallery_head center-block text-center text-capitalize"><img src="images/type_unity.png"/> Unity</div>
             <div class="col-xs-12">
                 <div class="row">
                     <?php
@@ -105,9 +103,7 @@
         </div>
         <!-- --------------------------- -->
         <div class="row">
-            <div class="row col-xs-12 gallery_head center-block text-center text-capitalize"><img
-                    src="images/type_android.png"/> Android
-            </div>
+            <div class="row col-xs-12 gallery_head center-block text-center text-capitalize"><img src="images/type_android.png"/> Android</div>
             <div class="col-xs-12">
                 <div class="row">
                     <?php
@@ -115,9 +111,9 @@
                                      "ToneDef Tone Dialer",
                                      array( "images/projects/ton-1-lg.jpg" ),
                                      "<p>ToneDef is a small, powerful open-source tone dialer featuring full DTMF, blue box, and red box modes.
-                                    Dial using the keypad buttons, enter a predefined sequence for automatic playback, or select an entry
-                                    from your contact list. A small slice of phreaking history! ;)</p>
-                                  <p>License: GPL V2</p>",
+                                      Dial using the keypad buttons, enter a predefined sequence for automatic playback, or select an entry
+                                      from your contact list. A small slice of phreaking history! ;)</p>
+                                      <p>License: GPL V2</p>",
                                      array( "https://play.google.com/store/apps/details?id=com.bytestemplar.tonedef" => "Google Play Store",
                                             "https://github.com/Fortyseven/ToneDef"                                  => "Fork it on GitHub" ) );
 
@@ -125,27 +121,27 @@
                                      "Spare Deck",
                                      array( "images/projects/sdk-1.jpg" ),
                                      "<p><i>\"Lose the deck of AR cards for your favorite video game console? This free Android app might be able
-                                    to help...\"</i></p><br/>
-                                    <p>This is an Android app I actually had taken down by Nintendo off of the Google Play Store. <i>Spare
-                                    Deck</i> is essentially a high res gallery of the AR cards that come packed with the Nintendo 3DS. It was
-                                    expanded to include the ones packed with Kid Icarus, and also the Playstation Vita.</p>
-                                    <p>The app is no longer supported, but the source code is free for whoever might be interested.</p>
-                                    <hr/>
-                                    <p><small>Spare Deck was written early in the process of learning Android, so there's probably bugs and
-                                    bad decisions everywhere.</small></p>
-                                    <p>License: MIT</p>",
+                                      to help...\"</i></p><br/>
+                                      <p>This is an Android app I actually had taken down by Nintendo off of the Google Play Store. <i>Spare
+                                      Deck</i> is essentially a high res gallery of the AR cards that come packed with the Nintendo 3DS. It was
+                                      expanded to include the ones packed with Kid Icarus, and also the Playstation Vita.</p>
+                                      <p>The app is no longer supported, but the source code is free for whoever might be interested.</p>
+                                      <hr/>
+                                      <p><small>Spare Deck was written early in the process of learning Android, so there's probably bugs and
+                                      bad decisions everywhere.</small></p>
+                                      <p>License: MIT</p>",
                                      array( "https://github.com/Fortyseven/SpareDeck" => "Fork it on GitHub" ) );
 
                         galleryItem( "VKLauncher",
                                      "VK Launcher",
                                      array( "images/projects/vkl-2.png" ),
                                      "<p><b>Launch apps by saying your favorite phrase or word!</b></p>
-                                    <p>VK Launcher lets you harness the power of Google Voice Search to start any application on your Android
-                                    device by saying a keyword that you define. An unlimited amount of keywords can be created and backed up
-                                    to external storage.</p>
-                                    <hr/>
-                                    <p><small>Admittedly, this app has been deprecated a bit thanks to Google Now, but at the time there wasn't
-                                    anything like it in the store.  Still, maybe it has some utility for certain individuals.</small></p>",
+                                      <p>VK Launcher lets you harness the power of Google Voice Search to start any application on your Android
+                                      device by saying a keyword that you define. An unlimited amount of keywords can be created and backed up
+                                      to external storage.</p>
+                                      <hr/>
+                                      <p><small>Admittedly, this app has been deprecated a bit thanks to Google Now, but at the time there wasn't
+                                      anything like it in the store.  Still, maybe it has some utility for certain individuals.</small></p>",
                                      array( "https://play.google.com/store/apps/details?id=com.hacsoft.vk"       => "Google Play Store",
                                             "https://play.google.com/store/apps/details?id=com.hacsoft.vk.trial" => "Free Trial Version" ) );
                     ?>
@@ -154,9 +150,7 @@
         </div>
         <!-- --------------------------- -->
         <div class="row">
-            <div class="row col-xs-12 gallery_head center-block text-center text-capitalize"><img
-                    src="images/type_html5.png"/> HTML5
-            </div>
+            <div class="row col-xs-12 gallery_head center-block text-center text-capitalize"><img src="images/type_html5.png"/> HTML5</div>
             <div class="col-xs-12">
                 <div class="row">
                     <?php
@@ -164,7 +158,7 @@
                                      "ToneDef Web Edition",
                                      array( "images/projects/ton-1-lg.jpg" ),
                                      "<p>This is a port of the Android ToneDef tone dialer to HTML5 using the Web Audio API and AngularJS.
-                                        Tested with the latest Chrome (desktop and mobile), and Firefox.</p>",
+                                      Tested with the latest Chrome (desktop and mobile), and Firefox.</p>",
                                      array( "apps/tonedef/#/"                          => "View on the Web",
                                             "https://github.com/Fortyseven/ToneDefWeb" => "Fork it on GitHub" ) );
 
@@ -172,10 +166,10 @@
                                      "Reddmo",
                                      array( "images/projects/red-1.png" ),
                                      "<p>It's not Cosmo! It's the internationally famous news magazine, Reddmo!</p>
-                                  <p>Reddmo is an HTML5 toy that automatically generates a magazine cover using the images and headlines linked
-                                   to off of Reddit.  The cover can be customized to use content from a specific subreddit, or from the front
-                                   page.</p>
-                                  <p>The outcome is hit or miss, but this was a seriously fun toy to hack on.</p>",
+                                      <p>Reddmo is an HTML5 toy that automatically generates a magazine cover using the images and headlines linked
+                                      to off of Reddit.  The cover can be customized to use content from a specific subreddit, or from the front
+                                      page.</p>
+                                      <p>The outcome is hit or miss, but this was a seriously fun toy to hack on.</p>",
                                      array( "misc/reddmo/"                         => "View on the Web",
                                             "https://github.com/Fortyseven/Reddmo" => "Fork it on GitHub" ) );
                     ?>
