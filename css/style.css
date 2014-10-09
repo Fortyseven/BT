@@ -26,7 +26,7 @@ body {
     /*max-width:           1024px;*/
     /*padding-top:         50px; *//* for navbar */
     -webkit-text-stroke: 0.25px;
-    padding-top: 1em;
+    padding-top:         1em;
 }
 
 #Header {
@@ -39,7 +39,8 @@ body {
     background:    darkred;
     color:         black;
     box-shadow:    0px 0px 18px black;
-    border-radius: 8px;
+    border-radius: 0.5em;
+    padding:       1em;
 }
 
 #Byline {
@@ -245,4 +246,43 @@ body {
         padding-top:    12px;
         padding-bottom: 12px;
     }
+}
+
+#InnerContent {
+    background-color: white;
+    border-radius:    0.25em;
+    padding: 1em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    padding: 0;
+    margin: 0;
+}
+
+.older_projects {
+    font-family: "Roboto", sans-serif;
+}
+.older_projects h1, .older_projects h2, .older_projects span a {
+    font-family: "HandelGoth", sans-serif;
+}
+
+.older_projects a {
+    color: darkred;
+}
+
+.older_projects a {
+    color: darkred;
+    text-decoration: underline;
+}
+
+
+.older_projects li {
+    list-style: square;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    clear:both;
+}
+
+.older_projects ul {
+    padding-top: 1em;
 }
