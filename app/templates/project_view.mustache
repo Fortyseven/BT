@@ -1,0 +1,32 @@
+<div id="{{id}}" class="gallery_entry">
+    <div class="row">
+        <div class="gallery_title col-xs-12">{{name}}</div>
+    </div>
+    <div class="row">
+        <div class="gallery_description col-xs-12 col-md-8">
+            {{{description}}}
+<!--            //if ( isset( $links_array ) ) { ?-->
+                <div class="gallery_links">
+                    <ul>
+                        {{#links}}
+                            <li><span class="glyphicon glyphicon-link"></span> <a href="{{url}}">{{name}}</a></li>
+                        {{/links}}
+                    </ul>
+                </div>
+<!-- -->
+        </div>
+        <?php if (isset( $screencap_array )) { ?>
+            <div class="col-xs-12 col-md-4">
+<!--                //foreach ( $screencap_array as $image ) { ?-->
+                    {{#screenshots}}
+                    <a class="" href="#"><img class="img-responsive pull-right gallery_image thumbnail" src="{{image}}"></a>
+                    {{/screenshots}}
+<!-- -->
+            </div>
+        <?php } ?>
+    </div>
+    <div class="row">
+        <div class="">
+        </div>
+    </div>
+</div>
