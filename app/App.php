@@ -74,7 +74,10 @@
             }
             else {
                 // Fall back to default route
-                $this->renderRoute( $this->route_default );
+                //$this->renderRoute( $this->route_default );
+                header('Location: index.php');
+                flush();
+                exit();
             }
         }
 
