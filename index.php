@@ -2,6 +2,8 @@
     require_once( "app/config.php" );
     require_once( "app/App.php");
 
+    use BT\App;
+    use BT\RouteType;
 
     $app = new App(array(
         ""                               => array( "name" => "frontpage", "type" => RouteType::DIRECT )
