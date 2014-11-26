@@ -217,8 +217,10 @@ body {
 }
 
 .nav-icon {
-    padding-right: 1em;
-    height:        1.2em;
+    padding-right: 0.5em;
+    padding-left:  0.25em;
+    height:        1.5em;
+    vertical-align: bottom;
 }
 
 /* make sidebar nav vertical */
