@@ -7,13 +7,11 @@
 
     require_once( "app/config.php" );
 
-
     abstract class RouteType
     {
         const DIRECT  = 0;
         const PROJECT = 1;
     }
-
 
     class App
     {
