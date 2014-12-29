@@ -21,9 +21,9 @@ body {
     font-size:           12pt;
     background:          url("../images/bg2.png") no-repeat bottom center fixed;
     background-size:     contain;
-    /*padding:         0;*/
-    /*margin:          0;*/
-    /*max-width:           1024px;*/
+    padding:         auto;
+    margin:          auto;
+    max-width:           1280px;
     /*padding-top:         50px; *//* for navbar */
     -webkit-text-stroke: 0.25px;
     padding-top:         1em;

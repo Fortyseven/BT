@@ -19,5 +19,7 @@ them to follow the dead soldier as they're recycled into new, fresh men... behin
 this cunning tactic was discovered early on.</p>
 
 <p>That's where <b>you</b> come in...</p>
+
+<iframe width="740" height="450" src="//www.youtube.com/embed/MgTC1dt95K8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 DESC
-    );
+);
