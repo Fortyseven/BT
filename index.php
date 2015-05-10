@@ -1,4 +1,3 @@
-HI
 <?php
     require_once( "app/config.php" );
     require_once( "app/App.php");
